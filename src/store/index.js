@@ -11,6 +11,9 @@ export default new Vuex.Store({
 
     getters: {
         //computed properties
+        availableProducts() {
+
+        }
     },
 
     actions: {
