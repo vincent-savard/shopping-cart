@@ -11,8 +11,8 @@ export default new Vuex.Store({
 
     getters: {
         //computed properties
-        availableProducts() {
-
+        availableProducts(state, getters) {
+            return state.products.filter(product => product.inventory > 0)
         }
     },
 
